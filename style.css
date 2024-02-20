@@ -3,7 +3,21 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   background: url(./assets/fundo-light.jpg) no-repeat top center/cover;
+}
+
+#container{
+  width: 360px;
+  height: 712px;
+  border: 1px solid red;
+  margin: auto;
+}
+
+#profile img{
+  border: 1px solid brown;
+  border-radius: 50%;
+  display: block;
+  width: 112px;
+  margin: auto;
 }
