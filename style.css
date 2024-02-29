@@ -3,13 +3,24 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --text-color: white;
+  --bg-url: url(./assets/fundo-dark.jpg)
+}
+
+.light {
+  --text-color: black;
+  --bg-url: url(./assets/fundo-light.png)
+}
+
 body {
-  background: url(./assets/fundo-dark.jpg) no-repeat top center/cover;
+  background: var(--bg-url) no-repeat top center/cover;
   height: 100vh;
 }
 
 body * {
-  color: white;
+  color: var(--text-color);
   font-family: "inter", sans-serif;
 }
 
@@ -61,7 +72,7 @@ ul li a {
 }
 ul li a:hover {
   background: rgb(7, 24, 124);
-  border: 1.5px solid grey;
+  border: 1.5px solid var(--text-color);
 }
 
 #social-links {
