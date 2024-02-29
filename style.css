@@ -4,20 +4,34 @@
   box-sizing: border-box;
 }
 body {
-  background: url(./assets/fundo-light.jpg) no-repeat top center/cover;
+  background: url(./assets/fundo-light.png) no-repeat top center/cover;
 }
 
-#container{
+body * {
+  color: black;
+  font-family: "inter", sans-serif;
+}
+
+#container {
   width: 360px;
-  height: 712px;
-  border: 1px solid red;
-  margin: auto;
+  margin: 56px auto 0px;
 }
 
-#profile img{
-  border: 1px solid brown;
+#profile {
+  text-align: center;
+  padding: 24px;
+}
+
+#profile img {
+  border: 1px solid black;
   border-radius: 50%;
   display: block;
   width: 112px;
   margin: auto;
+}
+
+#profile p {
+  font-weight: 500;
+  line-height: 24px;
+  margin-top: 8px;
 }
